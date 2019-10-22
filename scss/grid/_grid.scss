@@ -69,9 +69,13 @@ th.column {
   padding-bottom: $column-padding-bottom;
 
   // Prevents Nested columns from double the padding
-  .column,
-  .columns {
+  .column.first,
+  .columns.first {
     padding-left: 0 !important;
+  }
+
+  .column.last,
+  .columns.last {
     padding-right: 0 !important;
   }
 }
